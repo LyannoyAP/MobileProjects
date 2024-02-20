@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MobileProjects</string>
+    <string name="s_b_start">Начать тестирование</string>
+    <string name="s_b_continue">Продолжить тестирование</string>
+    <string name="s_t_questioncount">Выберите кол-во вопросов:</string>
+    <string name="s_b_exit">Выход</string>
+    <string name="s_t_tasks">Кол-во заданий:</string>
+    <string name="s_t_taskscount">1</string>
+    <string name="s_t_number">Задание №1</string>
+    <string name="s_b_answer">Ответ</string>
+    <string name="s_b_return">Вернуться в меню</string>
+    <string name="s_t_result">Результат: 0/1</string>
+    <string name="s_t_taskchoice">Выберите задание, к которому хотите вернуться</string>
+    <string name="s_b_turntotask">Вернуться к заданию</string>
+    <string name="s_b_turnback">Вернуться на главный экран</string>
+    <string name="s_b_startload">Готовьтесь к переходу</string>
 </resources>

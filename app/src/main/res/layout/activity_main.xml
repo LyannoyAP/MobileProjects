@@ -1,30 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Лянной_Артём_Павлович"
+    <Button
+        android:id="@+id/b_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/s_b_start"
+        android:textColor="@color/green"
+        />
+    <Button
+        android:id="@+id/b_сontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/b_start"
+        android:text="@string/s_b_continue"
+        android:background="@drawable/transperent_button"
+        />
+    <TextView
+        android:id="@+id/t_questioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_сontinue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_tiny"
+        android:text="@string/s_t_questioncount" />
+
+    <EditText
+        android:id="@+id/e_questioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_сontinue"
+        android:layout_toEndOf="@id/t_questioncount"
+        />
+
+    <ImageView
+        android:id="@+id/i_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_start"
+        android:layout_marginBottom="@dimen/dp_small"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/b_start" />
+
     <Button
         android:id="@+id/b_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выход"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/e_questioncount"
+        android:text="@string/s_b_exit"
         android:onClick="b_exitClick"
-        app:layout_constraintTop_toBottomOf="@+id/Лянной_Артём_Павлович"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t_questioncount"
+        android:layout_marginTop="@dimen/dp_normal">
+        <ImageView
+            android:id="@+id/i_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/human" />
+
+        <ImageView
+            android:id="@+id/i_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/world"
+            android:layout_toEndOf="@id/i_human"
+            android:layout_marginStart="@dimen/dp_big"/>
+
+    </RelativeLayout>
+</RelativeLayout>
