@@ -14,4 +14,6 @@
     <string name="s_b_turntotask">Вернуться к заданию</string>
     <string name="s_b_turnback">Вернуться на главный экран</string>
     <string name="s_b_startload">Готовьтесь к переходу</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

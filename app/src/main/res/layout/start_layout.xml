@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/b_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/s_b_start"
+        android:textColor="@color/green"
+        />
+
+    <Button
+        android:id="@+id/b_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/b_start"
+        android:text="@string/s_b_continue"
+        android:background="@drawable/transperent_button"
+        />
+    <TextView
+        android:id="@+id/t_questioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_continue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_tiny"
+        android:text="@string/s_t_questioncount" />
+
+    <EditText
+        android:id="@+id/e_questioncount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_continue"
+        android:layout_toEndOf="@id/t_questioncount"
+        />
+
+    <ImageView
+        android:id="@+id/i_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_start"
+        android:layout_marginBottom="@dimen/dp_small"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/b_start" />
+
+    <Button
+        android:id="@+id/b_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/e_questioncount"
+        android:text="@string/s_b_exit"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t_questioncount"
+        android:layout_marginTop="@dimen/dp_normal">
+        <ImageView
+            android:id="@+id/i_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/human" />
+
+        <ImageView
+            android:id="@+id/i_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/world"
+            android:layout_toEndOf="@id/i_human"
+            android:layout_marginStart="@dimen/dp_big"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
